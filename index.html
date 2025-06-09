@@ -13,32 +13,38 @@
     
     
     <main class="w-screen h-screen">
-      <div class="combat bg-amber-100 4p-4">
+        <div class="upgrades bg-amber-100"></div>
         
-        <img src="/src/images/goblin.png" alt="goblin" class="rounded-full cursor-pointer h-35 w-35 p-4 ">
-        <img src="/src/images/shield.png" alt="shield" class="rounded-full cursor-pointer h-35 w-35 p-4">  
-        <img src="/src/images/sword.png" alt="sword" class="rounded-full cursor-pointer h-35 w-35 p-4"> 
-        <img src="/src/images/sling.png" alt="sling" class="rounded-full cursor-pointer h-35 w-35 p-4"> 
-        <img src="/src/images/mage.png" alt="mage" class="rounded-full cursor-pointer h-35 w-35 p-4"> 
-      </div>
+        
+        
+        <div class="monster bg-amber-200 flex flex-col items-center justify-center">
+          <p id="gold"></p>
+          <img src="/src/images/goblin.png" alt="goblin" class="rounded-full cursor-pointer h-35 w-35 p-4 flex items-center" onClick="bigClick()">
+        </div>
 
+        
+        
+        <div class="shield bg-amber-300 flex flex-col items-center justify-center">
+          <img src="/src/images/shield.png" alt="shield" class="rounded-full cursor-pointer h-35 w-35 p-4" onClick="buyShield()"> 
+          <p id="shieldLevel"></p> 
+
+        </div>
+        
+        
+        <div class="weapons bg-amber-400 flex flex-row items-center justify-center">
+          <img src="/src/images/sword.png" alt="sword" class="rounded-full cursor-pointer h-35 w-35 p-4" onClick="buySword()"> 
+          <p id="swordLevel"></p>
+          <img src="/src/images/sling.png" alt="sling" class="rounded-full cursor-pointer h-35 w-35 p-4" onClick="buySling()">
+          <p id="slingLevel"></p> 
+          <img src="/src/images/mage.png" alt="mage" class="rounded-full cursor-pointer h-35 w-35 p-4" onClick="buyMage()">
+          <p id="mageLevel"></p> 
+
+        </div>
       
- 
-
-      <div class="upgrades bg-amber-200">
-    
-
-      </div>
-
-
-      <div class="combui bg-amber-300">
-        <button class="bg-green-200 rounded-4xl text-3xl cursor-pointer p-7"> Heal All</button>
-
-      </div>
     </main>
   
   
-  
+  <script src="/src/main.js"> </script>
   </body>
 
 
@@ -46,4 +52,5 @@
 
 
 
+  </div>
   </html>

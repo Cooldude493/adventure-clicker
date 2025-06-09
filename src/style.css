@@ -1,19 +1,21 @@
 @import "tailwindcss";
 
- main{  display: grid;
+main {  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1.2fr 0.8fr;
+  grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    "combat combat upgrades"
-    "combat combat upgrades"
-    "combui combui upgrades";
+    "monster monster upgrades"
+    "shield shield upgrades"
+    "weapons weapons upgrades";
 }
-
-.combat { grid-area: combat; }
 
 .upgrades { grid-area: upgrades; }
 
-.combui { grid-area: combui; }
+.monster { grid-area: monster; }
+
+.shield { grid-area: shield; }
+
+.weapons { grid-area: weapons; }
 
